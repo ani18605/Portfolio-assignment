@@ -6,6 +6,7 @@ import './contact.css';
 const Contact = () => {
   const [message, setMessage] = useState(false);
   const formRef = useRef();
+  
   const handleSubmit = (e) => {
     e.preventDefault();
     setMessage(true);
@@ -27,6 +28,7 @@ const Contact = () => {
 
     e.target.reset();
   };
+  
   return (
     <section id="contact">
       <h5>Get In Touch</h5>
@@ -62,7 +64,6 @@ const Contact = () => {
           <button type="submit" className="btn btn-primary">
             Send Message
           </button>
-          
         </form>
       </div>
     </section>

@@ -1,5 +1,4 @@
 import React from 'react';
-import Typewriter from 'typewriter-effect';
 import CTA from './CTA';
 import HeaderSocials from './HeaderSocials';
 import './header.css';
@@ -9,22 +8,10 @@ const Header = () => {
     <header id="home">
       <div className="container header__container">
         <h5>
-          <Typewriter
-            options={{
-              strings: ["Hello I'm"],
-              autoStart: true,
-              loop: true,
-            }}
-          />
+          Hello, I'm
         </h5>
         <h1>
-          <Typewriter
-            options={{
-              strings: ["Aniruddha M. Patil"],
-              autoStart: true,
-              loop: true,
-            }}
-          />
+        Aniruddha M. Pati
         </h1>
         <CTA />
         <a href="#contact" className="scroll__down">

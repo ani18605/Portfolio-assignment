@@ -9,7 +9,16 @@ header {
   height: 100%;
   position: relative;
 }
+.react-typical-wrapper p::after {
+  content: ".."; /* Change the content to two dots */
+  animation: blink 1s infinite; /* Keep the blink animation */
+}
 
+@keyframes blink {
+  0% { opacity: 1; }
+  50% { opacity: 0; }
+  100% { opacity: 1; }
+}
 .cta {
   display: flex;
   justify-content: center;
